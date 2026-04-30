@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact ELIJAH GRAPHICS - Start Your Project</title>
+<meta name="description" content="Get in touch with ELIJAH GRAPHICS for professional branding, web development, and large format printing services in Ruiru.">
+<meta name="keywords" content="Contact ELIJAH GRAPHICS, ELIJAH GRAPHICS WhatsApp, Hire Graphic Designer Ruiru">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://your-domain.com/contact.html">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="creative-logo motion-brand-logo">
+        <div class="motion-logo-mark" aria-hidden="true">
+            <i class="fas fa-pen-nib"></i>
+            <span class="draw-line"></span>
+            <span class="draw-dot dot-one"></span>
+            <span class="draw-dot dot-two"></span>
+        </div>
+        <span class="logo-brand">ELIJAH GRAPHICS</span>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skill.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<section class="contact">
+    <div class="section-heading fade-in-up">
+        <span>Get In Touch</span>
+        <h2>Let's build something amazing</h2>
+        <p>Whether you need a brand identity or a high-performance website, I'm here to bring your vision to life.</p>
+    </div>
+
+    <div class="contact-grid fade-in-up" style="animation-delay: 0.1s;">
+        <form id="form" onsubmit="submitComment(event)">
+            <div class="detail-label" style="margin-bottom: 15px;">Send a message</div>
+            <input type="text" placeholder="Client Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your comment..." required></textarea>
+            <button type="submit">Submit Comment</button>
+        </form>
+
+        <div class="info">
+            <p>
+                <i class="fab fa-whatsapp"></i>
+                <span class="contact-detail">
+                    <span class="detail-label">WhatsApp</span>
+                    <a href="https://wa.me/254729300816" target="_blank" rel="noopener">0729300816</a>
+                </span>
+            </p>
+            <p>
+                <i class="fas fa-envelope"></i>
+                <span class="contact-detail">
+                    <span class="detail-label">Email</span>
+                    <span>elijahkinyua004@gmail.com</span>
+                </span>
+            </p>
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="contact-detail">
+                    <span class="detail-label">Location</span>
+                    <span>Wataalam, Ruiru</span>
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div id="statusMessage" class="status-message"></div>
+
+    <div id="submittedMessage" class="submitted-message"></div>
+
+    <div class="comments-section fade-in-up" style="animation-delay: 0.2s;">
+        <div class="detail-label" style="margin-bottom: 10px;">Testimonials</div>
+        <h2 style="margin-bottom: 20px;">Client Feedback</h2>
+        <div id="commentsList"></div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+
+<footer class="site-footer">
+    <p>ELIJAH GRAPHICS - Graphic Design & Web Development</p>
+    <a href="contact.html">Start a project</a>
+</footer>
+
+</body>
+</html>

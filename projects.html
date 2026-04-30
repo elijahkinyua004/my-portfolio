@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Gallery - ELIJAH GRAPHICS</title>
+<meta name="description" content="View the latest graphic design and web development projects by ELIJAH GRAPHICS. High-quality banners, posters, and brand identities.">
+<meta name="keywords" content="ELIJAH GRAPHICS Projects, Design Gallery, Printing and Installation Services Ruiru">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://your-domain.com/projects.html">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="creative-logo motion-brand-logo">
+        <div class="motion-logo-mark" aria-hidden="true">
+            <i class="fas fa-pen-nib"></i>
+            <span class="draw-line"></span>
+            <span class="draw-dot dot-one"></span>
+            <span class="draw-dot dot-two"></span>
+        </div>
+        <span class="logo-brand">ELIJAH GRAPHICS</span>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skill.html">Skills</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section id="projects" class="projects">
+    <div class="section-heading fade-in-up">
+        <span>Showcase</span>
+        <h2>Selected Works</h2>
+        <p>A blend of creative graphic design and modern web development solutions tailored for impact.</p>
+    </div>
+
+    <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project fade-in-up">
+            <div class="portfolio-preview glass-glow" aria-hidden="true">
+                <div class="preview-browser"><span></span></div>
+                <div class="preview-hero">
+                    <div class="preview-logo">EG</div>
+                    <div>
+                        <p class="preview-title" style="font-family: var(--brand-font);">Elijah Portfolio</p>
+                        <p class="preview-subtitle">Creative Web Developer</p>
+                    </div>
+                </div>
+                <div class="preview-cards"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-content">
+                <span class="project-tag">Web Development</span>
+                <h3>Personal Portfolio Site</h3>
+                <p>A high-performance site featuring glassmorphism design and custom motion graphics.</p>
+                <span class="project-meta">HTML / CSS / JavaScript</span>
+                <a href="index.html" class="project-link">View Project</a>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project fade-in-up" style="animation-delay: 0.1s;">
+            <div class="portfolio-preview brand-sample-bg glass-glow" aria-hidden="true">
+                <div class="preview-browser"><span></span></div>
+                <div class="preview-hero">
+                    <div class="preview-logo" style="background: linear-gradient(135deg, #00aeef, #ffde17);">DPI</div>
+                    <div>
+                        <p class="preview-title">Design, Printing & Installation</p>
+                        <p class="preview-subtitle">My Promise: Visual Excellence</p>
+                    </div>
+                </div>
+                <div class="preview-cards"><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-content">
+                <span class="project-tag">Full-Service Design</span>
+                <h3>Production & Setup</h3>
+                <p>Professional design, high-quality printing, and expert installation—I promise durability and visual excellence in every project.</p>
+                <span class="project-meta">Illustrator / Photoshop</span>
+                <a href="javascript:void(0)" class="project-link pricing-button" onclick="openPricingModal()"><i class="fas fa-tags" style="margin-right:8px;"></i>View Pricing</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Modal -->
+    <div id="pricingModal" class="pricing-modal" onclick="closePricingModal(event)">
+        <div class="pricing-card fade-in-up">
+            <button class="close-pricing" onclick="closePricingModal(event)">×</button>
+            <div class="detail-label">Service Rates</div>
+            <h3>Project Pricing</h3>
+            <div class="price-list">
+                <div class="price-item"><span>Graphic Design</span> <strong>500</strong></div>
+                <div class="price-item"><span>Printing (Per Meter)</span> <strong>800</strong></div>
+                <div class="price-item"><span>Installation</span> <strong>Location Based</strong></div>
+                <div class="price-item"><span>Banners</span> <strong>Service</strong></div>
+                <div class="price-item"><span>Stickers</span> <strong>Service</strong></div>
+                <div class="price-item"><span>Business Cards</span> <strong>Service</strong></div>
+                <div class="price-item"><span>Posters</span> <strong>Service</strong></div>
+                <div class="price-item"><span>All Graphics Work</span> <strong>Available</strong></div>
+            </div>
+            <p class="pricing-note">
+                I specialize in high-quality design, production, and setup. 
+                Note: Installation costs depend on the specific site and distance.
+            </p>
+            <a href="contact.html" class="project-link btn-full" style="width: 100%; text-align: center;">Book Now</a>
+        </div>
+    </div>
+
+    <div class="projects-layout">
+        <div class="gallery-panel fade-in-up">
+            <div class="gallery-heading">
+                <span>Selected Designs</span>
+                <h2>Recent Brand Work</h2>
+            </div>
+            <div id="gallery"></div>
+        </div>
+    </div>
+</section>
+
+<div id="preview" onclick="closePreview(event)">
+    <button class="close-btn" onclick="closePreview(event)">✕</button>
+    <button class="nav-btn prev-btn" onclick="previousImage(event)">❮</button>
+    <img id="previewImg" alt="Preview">
+    <button class="nav-btn next-btn" onclick="nextImage(event)">❯</button>
+</div>
+
+<script src="script.js"></script>
+
+<footer class="site-footer">
+    <p>ELIJAH GRAPHICS - Graphic Design & Web Development</p>
+    <a href="contact.html">Start a project</a>
+</footer>
+
+</body>
+</html>
