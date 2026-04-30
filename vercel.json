@@ -1,8 +1,14 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/skills", "destination": "/skill.html" },
-    { "source": "/projects", "destination": "/projects.html" },
-    { "source": "/contact", "destination": "/contact.html" }
+  "version": 2,
+  "builds": [
+    { "src": "api/contact.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/contact", "dest": "/api/contact.js" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/skills", "dest": "/skill.html" },
+    { "src": "/projects", "dest": "/projects.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }

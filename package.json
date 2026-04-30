@@ -1,10 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "1.0.0",
-  "description": "ELIJAH GRAPHICS Portfolio with Vercel Serverless backend",
-  "scripts": {
-    "start": "node server.js"
-  },
+  "description": "ELIJAH GRAPHICS Portfolio",
   "dependencies": {
     "twilio": "^4.18.1"
   }
