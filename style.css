@@ -2119,7 +2119,6 @@ nav a.active{
     .info {
         max-width: 100%;
     }
-}
 
     nav a {
         margin: 5px;
@@ -2159,10 +2158,6 @@ nav a.active{
 }
 
 /* Animations */
-.fade-in-up {
-    animation: fadeInUp 0.8s ease-out forwards;
-    opacity: 0;
-}
 
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
